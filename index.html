@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dropdown Button</title>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        Dashboard
+        <span class="material-symbols-outlined expand-icon"> expand_more </span>
+      </button>
+
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">
+          <span class="material-symbols-outlined"> cottage </span>
+          Home
+        </a>
+        <a href="#">
+          <span class="material-symbols-outlined">category</span>
+          Products
+        </a>
+        <a href="#">
+          <span class="material-symbols-outlined">donut_large</span>
+          Services
+        </a>
+
+        <div class="nested-dropdown">
+          <a href="#">
+            <span class="material-symbols-outlined">contact_support</span>
+            Contact Us
+          </a>
+
+          <div class="nested-dropdown-content">
+            <a href="#">
+              <span class="material-symbols-outlined">contact_mail</span>
+              Contact Information
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">unknown_document</span>
+              Inquiry Form
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">explore</span>
+              Visit Us
+            </a>
+          </div>
+        </div>
+
+        <a href="#">
+          <span class="material-symbols-outlined">info</span>
+          About Us
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
